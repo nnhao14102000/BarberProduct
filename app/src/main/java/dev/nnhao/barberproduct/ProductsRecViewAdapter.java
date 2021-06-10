@@ -21,9 +21,10 @@ public class ProductsRecViewAdapter extends RecyclerView.Adapter<ProductsRecView
 
     private Context context;
 
-    public ProductsRecViewAdapter(Context context){
-        this.context = context;
+    public ProductsRecViewAdapter(ShoppingFragment shoppingFragment) {
+        context = shoppingFragment.getContext();
     }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.products_list_item, parent, false);
