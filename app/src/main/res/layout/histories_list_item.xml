@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/historyItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtDateBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EBEBEB"
+            android:paddingLeft="10dp"
+            android:text="01/01/2019"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtSalonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EBEBEB"
+            android:paddingLeft="10dp"
+            android:text="SalonName#1"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_locate" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="District 1, Ho Chi Minh City"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Booking Infomation"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_date" />
+
+            <TextView
+                android:id="@+id/txtAppointmentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="10h00 - 11h00 at 28/03/2019"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_avatar" />
+
+            <TextView
+                android:id="@+id/txtBookingStylistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Kevin"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -17,8 +17,6 @@ import java.util.ArrayList;
 
 public class ShoppingFragment extends Fragment {
     private RecyclerView productsRecView;
-    private Context context;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
